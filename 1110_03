@@ -1,0 +1,26 @@
+
+from exam1110_03_function import get_file_to_lines
+
+filename = '2023년 10월  교통카드 통계자료.csv'
+result = get_file_to_lines(filename)
+
+#print(result['header'])
+#print(result['data'])
+
+data = result['data']
+
+max_rate = 0
+
+for line in data:
+    #print(line)
+    val1 = int(line[4]) #유임승차
+    val2 = int(line[6]) #무임승차
+    name = line[3]
+    if val2 != 0 and val1 > 10000:
+        rate = val1 / (val1+val2) #비율
+        #if rate > max_rate:
+         #   max_rate = rate
+          #  print(name,val1,val2,rate)
+        if rate > 0.92:
+            print(name,val1,val2,rate)
+print(max_rate)
