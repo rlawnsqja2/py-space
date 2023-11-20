@@ -1,4 +1,4 @@
-print(3**10)
-print(3%10)
-print(3//2)
-#import matplotlib.pyplot as plt
+#plt.barh
+#plt.pie
+#plt.show
+#plt.bar
