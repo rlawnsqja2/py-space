@@ -1,0 +1,39 @@
+class Station:
+    #속성을 정의
+    def __init__(self):
+        self.name = '' #호선명
+        self.line_name = '' #역명
+        self.in_count = 0; #승차
+        self.out_count = 0; #하차
+        self.time = '' #시간(?)
+    #end-def
+
+    def set_data(self, line_name, name, in_cnt, out_cnt):
+        self.line_name = line_name
+        self.name = name
+        self.in_count = in_cnt
+        self.out_count = out_cnt
+    #end-def
+
+    def show(self):
+        print(f'시간:{self.time}\t역명: {self.text_full(self.line_name + self.name, 30)}  => 승차:{self.in_count:10,}, 하차:{self.out_count:10,}')
+
+    def text_full(self, text, length=20):
+        text_length = 0
+
+        for x in text:
+            if ord('가') <= ord(x) <= ord('힣'):
+                text_length += 2
+            else:
+                text_length += 1
+
+        add_text = ''
+        for i in range(length - text_length):
+            add_text += ' '
+
+        return text + add_text
+
+    # end-def
+#end-class
+
+
