@@ -58,4 +58,4 @@ result = get_data()
 #print(result['data'])
 #display_chart(result['x_data'], result['data'],result['data2'])
 display_bar_chart(result['x_data'], result['data'],result['data2'])
-
+#################33
