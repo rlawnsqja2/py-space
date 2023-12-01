@@ -1,0 +1,26 @@
+import numpy as np
+
+data = np.array([1,2,3,4])
+print('np.array:', data)
+print('data[1:2]', data[1:2])
+
+data_2 = [1, 2, 3, 4]
+print('data_2:', data_2)
+
+data_3 = [1, 2, '3', 4]
+print('data_3:', data_3)
+
+data_4 = np.array([1,2,'3',4])
+print('np.array:', data_4)
+
+data_5 = [0] * 10
+print(data_5)
+
+data_6 = np.zeros(100)
+print('np.zeros:', data_6)
+
+data_7 = np.ones(20)
+print('np.ones:', data_7)
+
+data_8 = np.ones(20) * 10
+print('np.ones:', data_8)
