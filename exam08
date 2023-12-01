@@ -13,4 +13,9 @@ for i in data_2:
 print(data_2[data_2 < 0])
 
 mask_1 = abs(data_2) > 3
-print(data_2[mask_1])
+mask_2 = abs(data_2) % 2 == 0
+print('mask_1:',data_2[mask_1])
+print('mask_2:',data_2[mask_2])
+
+print('mask_1 + mask_2:', data_2[mask_1 + mask_2])
+print('mask_1 * mask_2:', data_2[mask_1 * mask_2])
