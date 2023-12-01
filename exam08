@@ -1,0 +1,16 @@
+import numpy as np
+
+#data_1 = range(0,10)
+#for i in data_1:
+    #print(i)
+
+data_2 = np.arange(-5,5)
+print(data_2)
+
+for i in data_2:
+    print(abs(i))
+
+print(data_2[data_2 < 0])
+
+mask_1 = abs(data_2) > 3
+print(data_2[mask_1])
